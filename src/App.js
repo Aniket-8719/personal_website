@@ -4,17 +4,17 @@ import Layout from "./Components/Layout";
 import Hero from "./Components/Hero";
 import Skills from "./Components/Skills";
 import Timeline from "./Components/Timeline";
+import Education from "./Components/Education";
 
 
 const App = () => {
   return (
     <Layout>
       <Hero/>
+      <Education/>
       <Skills/>
-    <section>
-      <h2>Experince</h2>
+      <section>
       <Timeline/>
-
     </section>
      
     </Layout>

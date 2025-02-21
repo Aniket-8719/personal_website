@@ -1,30 +1,39 @@
-import React from 'react'
+import React from "react";
 
 const Timeline = () => {
-    const exp = [
-        {
-            title: 'Senior Frontend Developer',
-            company: "MtestHub",
-            period:"2025-present",
-            description: "None"
-        }
-    ];
-  return (
-    <div>
-      {exp.map((item, index)=>(
-        <div key={index}>
-            <div>
-            <div>
-                <h3>{item.title}</h3>
-                <p>{item.company}</p>
-                <p>{item.period}</p>
-                <p>{item.description}</p>
-            </div>
-            </div>
-        </div>
-      ))}
-    </div>
-  )
-}
+  const experiences = [
+    {
+      title: "UI/UX Designer",
+      company: "Cufoodz",
+      period: "December 2023 - March 2024",
+      description: "Leading frontend architecture and UI/UX improvements.",
+    },
+    {
+      title: "Full Stack Web Developer",
+      company: "Edu-station",
+      period: "July 2024 - September 2024",
+      description: "Worked on React-based applications and performance optimization.",
+    },
+  ];
 
-export default Timeline
+  return (
+    <div id="experience" className="text-white py-10 px-6">
+      <h2 className="font-bold text-3xl text-purple-400 mb-6">Experience</h2>
+      <div className="space-y-6">
+        {experiences.map((item, index) => (
+          <div
+            key={index}
+            className="bg-gray-800 p-6 rounded-lg shadow-lg border-l-4 border-purple-500"
+          >
+            <h3 className="text-xl font-semibold">{item.title}</h3>
+            <p className="text-purple-400">{item.company}</p>
+            <p className="text-gray-400 text-sm">{item.period}</p>
+            <p className="mt-2 text-gray-300">{item.description}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default Timeline;
