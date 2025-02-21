@@ -3,16 +3,17 @@ import React from "react";
 const Timeline = () => {
   const experiences = [
     {
+      title: "Full Stack Web Developer",
+      company: "Edu-station",
+      period: "July 2024 - September 2024",
+      description:
+        "Worked on React-based applications and performance optimization.",
+    },
+    {
       title: "UI/UX Designer",
       company: "Cufoodz",
       period: "December 2023 - March 2024",
       description: "Leading frontend architecture and UI/UX improvements.",
-    },
-    {
-      title: "Full Stack Web Developer",
-      company: "Edu-station",
-      period: "July 2024 - September 2024",
-      description: "Worked on React-based applications and performance optimization.",
     },
   ];
 
